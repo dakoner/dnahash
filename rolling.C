@@ -23,8 +23,8 @@ int main(int argc, char *argv[]) {
     int conseq_valid = 0;
     for (size_t i = 0; i < seq.size(); ++i) {
       char c = seq[i];
-      int ci = char_to_int(c);
-      if (ci == -1) {
+      unsigned short ci = char_to_short(c);
+      if (ci == 4) {
 	n = 0;
 	conseq_valid = 0;
 	continue;
